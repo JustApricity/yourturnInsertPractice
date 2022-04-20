@@ -20,6 +20,8 @@
     </div>
 </body>
 <script>
+    const button = document.querySelector("button")
+    const content = document.querySelector(".content")
     button.addEventListener('click', function(e){
         const hello = document.createElement('h4');
         hello.innerHTML = `Hello ${firstname} ${lastname}`

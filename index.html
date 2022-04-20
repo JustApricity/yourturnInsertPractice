@@ -20,10 +20,14 @@
     </div>
 </body>
 <script>
+    const firstname = document.getElementById("firstname")
+    const lastname = document.getElementById("lastname")
     const button = document.querySelector("button")
     const content = document.querySelector(".content")
     button.addEventListener('click', function(e){
         const hello = document.createElement('h4');
+        let firstname = firstname.value
+        let lastname = lastname.value
         hello.innerHTML = `Hello ${firstname} ${lastname}`
         content.insertAdjacentElement('afterbegin', hello)
     })

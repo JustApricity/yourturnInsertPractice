@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert Practice Your Turn</title>
+</head>
+<body>
+    <div class="row">
+        <h1>Hello To:</h1>
+        <div class="hello">
+            <label for="firstname">First Name</label>
+            <input id="firstname" name="first_name" type="text">
+            <label for="lastname">Last Name</label>
+            <input id="lastname" name="last_name" type="text">
+            <button type="button">Say It!</button>
+            <div class="content">
+                <h4></h4>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    button.addEventListener('click', function(e){
+        const hello = document.createElement('h4');
+        hello.innerHTML = `Hello ${firstname} ${lastname}`
+        content.insertAdjacentElement('afterbegin', hello)
+    })
+</script>
+</html>
